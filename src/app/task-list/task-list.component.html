@@ -1,0 +1,13 @@
+<h2 class="mat-headline">Daily Angular Tasks</h2>
+
+<div class="mat-elevation-z2" style="padding: 8px; margin-bottom: 16px;">
+  <div *ngFor="let task of tasks" style="margin-bottom: 8px;">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="goToTask(task.path)"
+    >
+      {{ task.name }}
+    </button>
+  </div>
+</div>

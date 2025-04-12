@@ -1,0 +1,8 @@
+<app-task-header title="Day 1 - Form Reset Logic"
+    description="When the user clears the name field, the email and age fields should automatically reset (become empty as well)."></app-task-header>
+
+<form [formGroup]="form">
+    <input formControlName="name" placeholder="Name" />
+    <input formControlName="email" placeholder="Email" />
+    <input formControlName="age" placeholder="Age" />
+</form>

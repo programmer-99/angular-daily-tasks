@@ -1,0 +1,9 @@
+<div class="task-header">
+    <button mat-icon-button (click)="goBack()" aria-label="Back">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+    <div>
+        <h3 class="task-title">{{ title }}</h3>
+        <p class="task-description" *ngIf="description">{{ description }}</p>
+    </div>
+</div>
