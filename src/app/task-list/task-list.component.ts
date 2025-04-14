@@ -17,7 +17,7 @@ export class TaskListComponent {
 
   tasks = [
     { name: 'Day 1 - Form Field Reset Logic', path: 'task1' },
-    { name: 'Day 2 - Some Other Task', path: 'task2' },
+    { name: 'Day 2 - Show/Hide Section Based on Dropdown Selection', path: 'task2' },
   ];
 
   goToTask(path: string) {

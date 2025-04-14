@@ -1,0 +1,38 @@
+<app-task-header title="Day 2 - Show/Hide Section Based on Dropdown Selection" description="You have a dropdown menu (e.g., select) with options like Basic, Advanced, and Custom.
+
+    You want to:
+    
+    Show a specific section/component based on the selected option.
+    
+    Hide the others.
+    
+    Default section is hidden until a valid option is selected."></app-task-header>
+
+
+
+    <div style="text-align: center; align-items: center;">
+        <mat-form-field appearance="fill">
+            <mat-label>Select Mode</mat-label>
+            <mat-select [(value)]="selectedOption">
+              <mat-option value="">-- Select --</mat-option>
+              <mat-option *ngFor="let mode of modes" [value]="mode">
+                {{ mode }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          
+    
+    <div *ngIf="selectedOption === 'Basic'">
+        <h3>Basic Section</h3>
+        <p>This is the basic mode content.</p>
+    </div>
+    <div *ngIf="selectedOption === 'Advance'">
+        <h3>Advanced Section</h3>
+        <p>This is the advanced mode content.</p>
+    </div>
+    <div *ngIf="selectedOption === 'Custom'">
+        <h3>Custom Section</h3>
+        <p>This is the custom mode content.</p>
+    </div>
+    </div>
+  
