@@ -1,0 +1,10 @@
+<div class="main">
+    <form action="" [formGroup]="form">
+        <textarea name="" id="" 
+        formControlName="message" 
+        rows="5" 
+        [attr.maxlength]="maxlength"
+        placeholder="Write your message here..."></textarea>
+        <p>{{charCount}}/{{maxlength}}</p>
+    </form>
+</div>

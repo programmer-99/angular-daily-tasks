@@ -1,0 +1,15 @@
+<app-task-header title="Day 4 - Auto-Focus First Input Field When Form Loads" description="You want the first input of your form (e.g., Name, Email) to be automatically focused when the form appears — no need for the user to click it"></app-task-header>
+
+<div style="align-items: center;text-align: center;">
+    <form action="">
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input type="" matInput formControlName="name" #nameInput placeholder="Enter your name"> 
+        </mat-form-field>
+    
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input type="text" matInput formControlName="email" placeholder="Enter your email">
+        </mat-form-field>
+    </form>
+</div>

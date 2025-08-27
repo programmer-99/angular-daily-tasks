@@ -1,0 +1,20 @@
+<app-task-header title="Day 3 - Form Autosave on Value Change" description="Watch for any value changes in a form.
+
+    Wait 1s after the last keystroke (debounce).
+    
+    Call a mock API save.
+    
+    Show Saving... during save, then Saved! after"></app-task-header>
+
+<form action="" [formGroup]="profileForm">
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" />
+    </mat-form-field>
+</form>
+<div *ngIf="saveStatus === 'saving'">💾 Saving...</div>
+<div *ngIf="saveStatus === 'saved'">✅ Saved!</div>

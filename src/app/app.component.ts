@@ -7,7 +7,7 @@ import { TaskListComponent } from "./task-list/task-list.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, MatButtonModule, TaskListComponent],
+  imports: [RouterOutlet, CommonModule, MatButtonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

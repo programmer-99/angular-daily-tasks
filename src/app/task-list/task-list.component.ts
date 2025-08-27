@@ -18,6 +18,12 @@ export class TaskListComponent {
   tasks = [
     { name: 'Day 1 - Form Field Reset Logic', path: 'task1' },
     { name: 'Day 2 - Show/Hide Section Based on Dropdown Selection', path: 'task2' },
+    { name: 'Day 3 - Form Autosave on Value Change', path: 'task3' },
+    { name: 'Day 4 - Auto-Focus First Input Field When Form Loads', path: 'task4' },
+    { name: 'Day 5 - Real-Time Character Counter', path: 'task5' },
+    { name: 'Day 6 - Disable Weekends in Date Picker', path: 'task6' },
+    { name: 'Day 7 - Sync Two Dropdowns', path: 'task7' },
+
   ];
 
   goToTask(path: string) {
